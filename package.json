@@ -1,0 +1,14 @@
+{
+  "name": "webchatfrontend",
+  "version": "1.0.0",
+  "description": "A web chat frontend using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tiagorvmartins@gmail.com"
+  ],
+  "author": "Tiago Martins",
+  "license": "ISC"
+}
