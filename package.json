@@ -4,11 +4,39 @@
   "description": "A web chat frontend using socket.io",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "watch": "webpack --watch --config webpack.config.dev.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tiagorvmartins@gmail.com"
   ],
   "author": "Tiago Martins",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^8.0.2",
+    "socket.io-client": "^2.3.0"
+  }
 }
