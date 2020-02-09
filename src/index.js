@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Login from './login.js';
-import Register from './register.js';
-import Chat from './chat.js'; 
+import Login from './login';
+import Register from './register';
+import Chat from './chat'; 
+import PrivateRoute from './helpers/PrivateRoute';
 
 import { 
     BrowserRouter as Router,
@@ -17,21 +18,14 @@ class Index extends React.Component {
         return (
             <Router>                
                 <Switch>
-                    <Route exact path="/">
+                    <PrivateRoute component={Chat} exact path="/" />
+                    <PrivateRoute component={Chat} exact path="/chat" />                    
+                    <Route exact path="/login">
                         <Login />
                     </Route>
-
-                    <Route path="/login">
-                        <Login />
-                    </Route>
-
-                    <Route path="/register">
+                    <Route exact path="/register">
                         <Register />
-                    </Route>
-                    
-                    <Route path="/chat">
-                        <Chat />
-                    </Route>
+                    </Route>                                    
                 </Switch>
             </Router>
         );

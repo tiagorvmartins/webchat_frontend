@@ -1,10 +1,9 @@
 {
   "name": "webchatfrontend",
   "version": "1.0.0",
-  "description": "A web chat frontend using socket.io",
+  "description": "A web chat frontend using redux and socket.io",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
