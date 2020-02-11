@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'redux-first-router-link';
 import './login.css';
 
 class Login extends React.Component {
